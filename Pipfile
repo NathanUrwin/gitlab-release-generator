@@ -1,0 +1,23 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pip-check-reqs = ">=2.0.1,<3"
+pip-licenses = "==2.3.0"
+flake8 = "<4,>=3.7.9"
+flake8-docstrings = ">=1.5.0,<2"
+pytest = "==6.0.2"
+pytest-cov = "<3,>=2.5.1"
+pytest-pythonpath = ">=0.7.2,<1"
+tox = "<4,>=3.0.0"
+twine = "==3.2.0"
+Sphinx = ">=2.2.0"
+
+[packages]
+click = ">=7.0,<8"
+requests = "*"
+
+[requires]
+python_version = "3.8"
