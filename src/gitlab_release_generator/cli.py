@@ -59,43 +59,50 @@ pass_info = click.make_pass_decorator(Info, ensure=True)
 @click.option(
     "--changelog-filepath",
     envvar="CHANGELOG_FILEPATH",
-    help="Changelog filepath. Can be set by 'CHANGELOG_FILEPATH' environment variable.",
+    help="Changelog filepath. Can be set by "
+         "'CHANGELOG_FILEPATH' environment variable.",
     required=True
     )
 @click.option(
     "--gitlab-api-url",
     envvar="GITLAB_API_URL",
-    help="Gitlab api url. Can be set by 'GITLAB_API_URL' environment variable.",
+    help="Gitlab api url. Can be set by "
+         "'GITLAB_API_URL' environment variable.",
     required=True
     )
 @click.option(
     "--gitlab-namespace",
     envvar="GITLAB_NAMESPACE",
-    help="Gitlab namespace. Can be set by 'GITLAB_NAMESPACE' environment variable.",
+    help="Gitlab namespace. Can be set by "
+         "'GITLAB_NAMESPACE' environment variable.",
     required=True
     )
 @click.option(
     "--gitlab-private-token",
     envvar="GITLAB_PRIVATE_TOKEN",
-    help="Gitlab private token. Can be set by 'GITLAB_PRIVATE_TOKEN' environment variable.",
+    help="Gitlab private token. Can be set by "
+         "'GITLAB_PRIVATE_TOKEN' environment variable.",
     required=True
     )
 @click.option(
     "--gitlab-project",
     envvar="GITLAB_PROJECT",
-    help="Gitlab project. Can be set by 'GITLAB_PROJECT' environment variable.",
+    help="Gitlab project. Can be set by "
+         "'GITLAB_PROJECT' environment variable.",
     required=True
     )
 @click.option(
     "--gitlab-site-url",
     envvar="GITLAB_SITE_URL",
-    help="Gitlab site url. Can be set by 'GITLAB_SITE_URL' environment variable.",
+    help="Gitlab site url. Can be set by "
+         "'GITLAB_SITE_URL' environment variable.",
     required=True
     )
 @click.option(
     "--releases-filepath",
     envvar="RELEASES_FILEPATH",
-    help="Releases filepath. Can be set by 'RELEASES_FILEPATH' environment variable.",
+    help="Releases filepath. Can be set by "
+         "'RELEASES_FILEPATH' environment variable.",
     required=True
     )
 @click.option("-v", "--verbose", count=True, help="Enable verbose output.")

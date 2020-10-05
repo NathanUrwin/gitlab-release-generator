@@ -21,3 +21,6 @@ requests = "*"
 
 [requires]
 python_version = "3.8"
+
+[scripts]
+build = "bash -c 'pipenv --rm && pipenv install && pipenv run python setup.py install'"
