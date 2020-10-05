@@ -24,3 +24,5 @@ python_version = "3.8"
 
 [scripts]
 build = "bash -c 'pipenv --rm && pipenv install && pipenv run python setup.py install'"
+dist = "basic -c 'rm -rf dist && pipenv run python setup.py sdist'"
+upload = "pipenv run twine upload -u nathanurwin dist/*"

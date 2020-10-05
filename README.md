@@ -23,8 +23,7 @@ See also the list of [contributors](https://github.com/NathanUrwin/gitlab-releas
 ## Release
 
 ```bash
-rm -rf dist
-pipenv run python setup.py sdist
+pipenv run dist
 # export REQUESTS_CA_BUNDLE=/users/nathan.urwin/.ssl/pgs-root-ca.pem && export SSL_CERT_FILE=$REQUESTS_CA_BUNDLE
-pipenv run twine upload -u nathanurwin dist/*
+pipenv run upload
 ```
